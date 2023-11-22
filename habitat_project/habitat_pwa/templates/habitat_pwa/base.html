@@ -2,32 +2,44 @@
 {% load static %}
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5JT5SKB6RC"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-5JT5SKB6RC');
     </script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+
+    <!-- PWA load -->
     {% progressive_web_app_meta %}
+
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- Style sheet -->
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+
+    <!-- Title -->
     <title>Habitat</title>
 </head>
 <body class="app-canvas">
     <main class="app-container">
         <section class="app-header">
-            <p>Test test test</p>
+            <p>APP HEADER</p>
         </section>
         <section class="app-body">
-            <p>Test test test</p>
+            <p>APP BODY</p>
         </section>
         <section class="app-footer">
-            <p>Test test test</p>
+            <p>APP FOOTER</p>
         </section>
     </main>
 </body>
