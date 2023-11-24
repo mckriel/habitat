@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
 
     <!-- PWA load -->
     {% progressive_web_app_meta %}
@@ -28,18 +30,36 @@
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
 
     <!-- Title -->
-    <title>Habitat</title>
+    <title>Habitat - Arcadian Forest</title>
 </head>
 <body class="app-canvas">
     <main class="app-container">
         <section class="app-header">
-            <p>APP HEADER</p>
+            <img class="header-logo" src="{% static '/img/habitat-logo.png' %}"/>
         </section>
         <section class="app-body">
-            <p>APP BODY</p>
+            <div class="schedule-card-body">
+
+                {% if lineup_list %}
+                    <ul class="schedule-list">
+                        {% for artist in lineup_list %}
+                        <li class="schedule-card">
+                            <p class="schedule-card-title"> {{ artist.artist_name }} </p>
+                            <p class="schedule-card-genre"> {{ artist.genre }} </p>
+                            <p class="schedule-card-time"> {{ artist.start_time|date:"H:i" }} - {{ artist.end_time|date:"H:i" }} </p>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+
+            </div>
         </section>
         <section class="app-footer">
-            <p>APP FOOTER</p>
+            <div class="navbar">
+                <span class="material-symbols-outlined active" href="#">music_note</span>
+                <span class="material-symbols-outlined" href="#">map</span>
+                <span class="material-symbols-outlined" href="#">pin_drop</span>
+            </div>
         </section>
     </main>
 </body>

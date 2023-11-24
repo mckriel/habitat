@@ -1,3 +1,173 @@
+:root {
+    --dark: #0A1D2C;
+    --light: #E1A16A;
+    --white: #FFF9CA;
+    --red: #E04866;
+    --green: #0E0E0E;
+    --border1: 1px solid #E1A16A;
+    --border23: 1px solid #0A1D2C;
+    --border24: 1px solid #0A1D2C;
+    --border25: 1px solid #0A1D2C;
+    --border26: 1px solid #0A1D2C;
+
+}
+
 body {
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
     font-family: 'Patua One', serif;
+    text-transform: uppercase;
+    list-style-type: none;
+    background-color: var(--dark);
+    height: 100%;
+    /*margin: 2px auto;*/
+    /*padding: 2px;*/
+}
+
+main {
+    border: var(--border23);
+    margin-top: 100px;
+    /*margin: 2px auto;*/
+    padding: 2px;
+    width: 350px;
+    min-height: 600px;
+}
+
+section {
+    border: var(--border23);
+    /*margin: 2px auto;*/
+    /*padding: 2px;*/
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+li {
+    /*border: var(--border);*/
+    /*padding: 2px;*/
+    /*width: 100%;*/
+
+
+    /*background-color:rgb(85, 85, 85);*/
+    /*padding: 8px;*/
+    /*color: white;*/
+    /*margin-bottom: 5px;*/
+    /*list-style-type: none;*/
+    /*font-family: 'Montserrat', sans-serif;*/
+    /*font-size: 14px;*/
+    /*text-transform: uppercase;*/
+    /*text-align: center;*/
+    /*box-shadow: 0 3px 10px rgba(77, 77, 77, 0.2);*/
+    border-radius: 5px;
+    margin: 5px;
+    /*letter-spacing: 1px;*/
+}
+
+.app-header {
+    border: var(--border24);
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    /*margin: 2px auto;*/
+    /*padding: 2px;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.app-body {
+    border: var(--border25);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 450px;
+    margin: 2px auto;
+    padding: 2px;
+    padding-bottom: 50px;
+
+}
+
+.app-footer {
+    border: var(--border26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--dark);
+}
+
+.header-logo {
+    height: 80px;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.schedule-card-body {
+    width: 100%;
+    border: var(--border23);
+    padding: 2px;
+}
+
+.schedule-list {
+    padding: 0px;
+}
+
+.schedule-card {
+    border: var(--border1);
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.schedule-card-title {
+    padding-bottom: 3px;
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin: 0px auto;
+}
+
+.schedule-card-genre {
+    margin: 0px;
+    font-size: 12px;
+    color: var(--white);
+}
+
+.schedule-card-time {
+    margin: 0px;
+    color: var(--red);
+    font-size: 14px;
+}
+
+.navbar {
+    display: table;
+    width: 350px;
+    table-layout: fixed;
+    font-size: 20px;
+}
+
+.navbar span {
+    display: table-cell;
+    text-align: center;
+}
+
+.navbar span:hover {
+    color: var(--red);
+}
+
+.active {
+    color: var(--red);
 }

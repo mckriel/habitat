@@ -1,0 +1,11 @@
+
+[X] Page layout (single page with frames)
+[ ] Create individual pages
+[ ] dummy page for directions with google pin link
+[ ] dummy page for festival map
+[ ] cache all information
+[ ] test for offline functionality
+[x] Add lineup information
+
+
+Add final styling to page
