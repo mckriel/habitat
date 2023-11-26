@@ -1,11 +1,24 @@
 
-[X] Page layout (single page with frames)
+
 [ ] Create individual pages
 [ ] dummy page for directions with google pin link
 [ ] dummy page for festival map
 [ ] cache all information
 [ ] test for offline functionality
-[x] Add lineup information
 
 
 Add final styling to page
+
+[X] Page layout (single page with frames)
+[x] Add lineup information
+
+
+Update the page based on the selected day
+
+
+Solution 1:
+Create a django view function for each day
+Create a django url entry for each day
+Trigger the corresponding button click with the linked django url
+Populate the page with data
+

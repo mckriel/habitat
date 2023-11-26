@@ -1,0 +1,30 @@
+{% extends 'habitat_pwa/base.html' %}
+{% block content %}
+{% load static %}
+
+<div id="offlinedata">
+
+</div>
+<div class="day-selector">
+    <form method="post">
+        {% csrf_token %}
+        {{ day_selector.as_p }}
+    </form>
+</div>
+<div class="schedule-card-body">
+
+    {% if lineup_list %}
+        <ul class="schedule-list">
+            {% for artist in lineup_list %}
+            <li class="schedule-card">
+                <p class="schedule-card-title"> {{ artist.artist_name }} </p>
+                <p class="schedule-card-genre"> {{ artist.genre }} </p>
+                <p class="schedule-card-time"> {{ artist.start_time|date:"H:i" }} - {{ artist.end_time|date:"H:i" }} </p>
+            </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+</div>
+
+{% endblock %}

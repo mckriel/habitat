@@ -3,13 +3,12 @@
     --light: #E1A16A;
     --white: #FFF9CA;
     --red: #E04866;
-    --green: #0E0E0E;
+    --green: #004a54;
     --border1: 1px solid #E1A16A;
     --border23: 1px solid #0A1D2C;
     --border24: 1px solid #0A1D2C;
     --border25: 1px solid #0A1D2C;
     --border26: 1px solid #0A1D2C;
-
 }
 
 body {
@@ -22,14 +21,12 @@ body {
     list-style-type: none;
     background-color: var(--dark);
     height: 100%;
-    /*margin: 2px auto;*/
-    /*padding: 2px;*/
+    min-width: 300px;
 }
 
 main {
     border: var(--border23);
     margin-top: 100px;
-    /*margin: 2px auto;*/
     padding: 2px;
     width: 350px;
     min-height: 600px;
@@ -37,34 +34,15 @@ main {
 
 section {
     border: var(--border23);
-    /*margin: 2px auto;*/
-    /*padding: 2px;*/
 }
 
 ul {
     list-style-type: none;
-
 }
 
 li {
-    /*border: var(--border);*/
-    /*padding: 2px;*/
-    /*width: 100%;*/
-
-
-    /*background-color:rgb(85, 85, 85);*/
-    /*padding: 8px;*/
-    /*color: white;*/
-    /*margin-bottom: 5px;*/
-    /*list-style-type: none;*/
-    /*font-family: 'Montserrat', sans-serif;*/
-    /*font-size: 14px;*/
-    /*text-transform: uppercase;*/
-    /*text-align: center;*/
-    /*box-shadow: 0 3px 10px rgba(77, 77, 77, 0.2);*/
     border-radius: 5px;
     margin: 5px;
-    /*letter-spacing: 1px;*/
 }
 
 .app-header {
@@ -73,9 +51,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
-    /*margin: 2px auto;*/
-    /*padding: 2px;*/
+    height: 120px;
     position: fixed;
     top: 0;
     left: 0;
@@ -85,14 +61,12 @@ li {
 .app-body {
     border: var(--border25);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     min-height: 450px;
     margin: 2px auto;
-    padding: 2px;
-    padding-bottom: 50px;
-
+    padding: 2px 2px 50px;
 }
 
 .app-footer {
@@ -119,7 +93,8 @@ li {
 .schedule-card-body {
     width: 100%;
     border: var(--border23);
-    padding: 2px;
+    padding: 0px;
+    margin-top: 50px;
 }
 
 .schedule-list {
@@ -135,8 +110,8 @@ li {
 
 .schedule-card-title {
     padding-bottom: 3px;
-    font-size: 17px;
-    letter-spacing: 2px;
+    font-size: 16px;
+    letter-spacing: 1px;
     margin: 0px auto;
 }
 
@@ -152,22 +127,109 @@ li {
     font-size: 14px;
 }
 
+.day-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    position: fixed;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    background-color: var(--dark);
+}
+
+.day-selector-dropdown {
+    font-family: 'Patua One', serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    background-color: #0A1D2C;
+    width: 350px;
+    height: 40px;
+    text-align: center;
+    border-color: #E04866;
+    color: var(--white);
+    padding: 5px;
+
+}
+
+.button {
+    font-family: 'Patua One', serif;
+    font-size: 18px;
+    background-color: #0A1D2C;
+    border: none;
+    color: #E04866;
+}
+
 .navbar {
     display: table;
     width: 350px;
     table-layout: fixed;
     font-size: 20px;
+    color: var(--green);
 }
 
-.navbar span {
+.navbar a {
     display: table-cell;
     text-align: center;
+    color: #004a54;
+
 }
 
-.navbar span:hover {
+.navbar a:hover {
     color: var(--red);
 }
 
 .active {
     color: var(--red);
+}
+
+.directions-body {
+    width: 350px;
+    text-transform: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    vertical-align: auto;
+}
+
+.directions-pin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--border1);
+    border-radius: 5px;
+    height: 40px;
+    width: 250px;
+    text-transform: uppercase;
+    background-color: #E1A16A;
+
+}
+
+.directions-pin a {
+    color: #0A1D2C;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.map-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+.map-image {
+    border: #E04866;
+    margin: auto;
+    width: 300px;
 }
