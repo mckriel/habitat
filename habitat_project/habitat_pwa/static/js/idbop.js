@@ -4,9 +4,9 @@ const lineup = [
     "pk": 1,
     "fields": {
       "artist_name": "Almero",
-      "genre": "Afrotech",
-      "start_time": "16:00:00",
-      "end_time": "18:00:00",
+      "genre": "Afro",
+      "start_time": "16:00",
+      "end_time": "18:00",
       "day_of_week": 0,
       "time_period": 1
     }
@@ -16,9 +16,9 @@ const lineup = [
     "pk": 2,
     "fields": {
       "artist_name": "Yo-Gurt",
-      "genre": "Dark Disco",
-      "start_time": "18:00:00",
-      "end_time": "19:30:00",
+      "genre": "Indie Dance",
+      "start_time": "18:00",
+      "end_time": "19:30",
       "day_of_week": 0,
       "time_period": 2
     }
@@ -28,9 +28,9 @@ const lineup = [
     "pk": 3,
     "fields": {
       "artist_name": "Shmikesss",
-      "genre": "Indie House",
-      "start_time": "19:30:00",
-      "end_time": "21:00:00",
+      "genre": "Indie Dance",
+      "start_time": "19:30",
+      "end_time": "21:00",
       "day_of_week": 0,
       "time_period": 2
     }
@@ -40,9 +40,9 @@ const lineup = [
     "pk": 4,
     "fields": {
       "artist_name": "Audiojerk",
-      "genre": "Electronica",
-      "start_time": "21:00:00",
-      "end_time": "23:00:00",
+      "genre": "Techno",
+      "start_time": "21:00",
+      "end_time": "23:00",
       "day_of_week": 0,
       "time_period": 2
     }
@@ -52,9 +52,9 @@ const lineup = [
     "pk": 5,
     "fields": {
       "artist_name": "Ivan Turanjanin",
-      "genre": "Dark Techno",
-      "start_time": "23:00:00",
-      "end_time": "01:00:00",
+      "genre": "Techno",
+      "start_time": "23:00",
+      "end_time": "01:00",
       "day_of_week": 0,
       "time_period": 2
     }
@@ -64,9 +64,9 @@ const lineup = [
     "pk": 6,
     "fields": {
       "artist_name": "Todd Duff",
-      "genre": "Techno",
-      "start_time": "01:00:00",
-      "end_time": "03:00:00",
+      "genre": "Psytech",
+      "start_time": "01:00",
+      "end_time": "03:00",
       "day_of_week": 0,
       "time_period": 3
     }
@@ -76,9 +76,9 @@ const lineup = [
     "pk": 7,
     "fields": {
       "artist_name": "Yoga w/ Eva",
-      "genre": "Sweet Yoga",
-      "start_time": "08:00:00",
-      "end_time": "09:00:00",
+      "genre": "Lifestyle",
+      "start_time": "08:00",
+      "end_time": "09:00",
       "day_of_week": 1,
       "time_period": 0
     }
@@ -88,9 +88,9 @@ const lineup = [
     "pk": 8,
     "fields": {
       "artist_name": "Hoop Class w/ Tracy",
-      "genre": "Hoopin",
-      "start_time": "09:00:00",
-      "end_time": "10:00:00",
+      "genre": "Lifestyle",
+      "start_time": "09:00",
+      "end_time": "10:00",
       "day_of_week": 1,
       "time_period": 0
     }
@@ -100,9 +100,9 @@ const lineup = [
     "pk": 9,
     "fields": {
       "artist_name": "Amith",
-      "genre": "Example genre",
-      "start_time": "10:00:00",
-      "end_time": "12:00:00",
+      "genre": "House",
+      "start_time": "10:00",
+      "end_time": "12:00",
       "day_of_week": 1,
       "time_period": 0
     }
@@ -112,9 +112,9 @@ const lineup = [
     "pk": 10,
     "fields": {
       "artist_name": "Mahandana",
-      "genre": "Example genre",
-      "start_time": "12:00:00",
-      "end_time": "13:30:00",
+      "genre": "Afro",
+      "start_time": "12:00",
+      "end_time": "13:30",
       "day_of_week": 1,
       "time_period": 1
     }
@@ -124,9 +124,9 @@ const lineup = [
     "pk": 11,
     "fields": {
       "artist_name": "Sides",
-      "genre": "Example genre",
-      "start_time": "13:30:00",
-      "end_time": "15:00:00",
+      "genre": "House",
+      "start_time": "13:30",
+      "end_time": "15:00",
       "day_of_week": 1,
       "time_period": 1
     }
@@ -136,9 +136,9 @@ const lineup = [
     "pk": 12,
     "fields": {
       "artist_name": "Sebby",
-      "genre": "Example genre",
-      "start_time": "15:00:00",
-      "end_time": "16:30:00",
+      "genre": "Indie Dance",
+      "start_time": "15:00",
+      "end_time": "16:30",
       "day_of_week": 1,
       "time_period": 1
     }
@@ -148,9 +148,9 @@ const lineup = [
     "pk": 13,
     "fields": {
       "artist_name": "Steph Vass",
-      "genre": "Example genre",
-      "start_time": "16:30:00",
-      "end_time": "18:00:00",
+      "genre": "Indie Dance",
+      "start_time": "16:30",
+      "end_time": "18:00",
       "day_of_week": 1,
       "time_period": 1
     }
@@ -160,9 +160,9 @@ const lineup = [
     "pk": 14,
     "fields": {
       "artist_name": "Karoo",
-      "genre": "Example genre",
-      "start_time": "18:00:00",
-      "end_time": "20:00:00",
+      "genre": "Indie Dance",
+      "start_time": "18:00",
+      "end_time": "20:00",
       "day_of_week": 1,
       "time_period": 2
     }
@@ -172,9 +172,9 @@ const lineup = [
     "pk": 15,
     "fields": {
       "artist_name": "Sonic Bloom",
-      "genre": "Example genre",
-      "start_time": "20:00:00",
-      "end_time": "21:30:00",
+      "genre": "Techno",
+      "start_time": "20:00",
+      "end_time": "21:30",
       "day_of_week": 1,
       "time_period": 2
     }
@@ -184,9 +184,9 @@ const lineup = [
     "pk": 16,
     "fields": {
       "artist_name": "Ryan Hill",
-      "genre": "Example genre",
-      "start_time": "21:30:00",
-      "end_time": "23:30:00",
+      "genre": "Techno",
+      "start_time": "21:30",
+      "end_time": "23:30",
       "day_of_week": 1,
       "time_period": 2
     }
@@ -196,9 +196,9 @@ const lineup = [
     "pk": 17,
     "fields": {
       "artist_name": "Lewis",
-      "genre": "Example genre",
-      "start_time": "23:30:00",
-      "end_time": "01:30:00",
+      "genre": "Techno",
+      "start_time": "23:30",
+      "end_time": "01:30",
       "day_of_week": 1,
       "time_period": 2
     }
@@ -208,9 +208,9 @@ const lineup = [
     "pk": 18,
     "fields": {
       "artist_name": "Rabbit",
-      "genre": "Example genre",
-      "start_time": "01:30:00",
-      "end_time": "03:00:00",
+      "genre": "Psytech",
+      "start_time": "01:30",
+      "end_time": "03:00",
       "day_of_week": 1,
       "time_period": 3
     }
@@ -220,9 +220,9 @@ const lineup = [
     "pk": 19,
     "fields": {
       "artist_name": "Portal",
-      "genre": "Example genre",
-      "start_time": "03:00:00",
-      "end_time": "05:00:00",
+      "genre": "Progressive Psy",
+      "start_time": "03:00",
+      "end_time": "05:00",
       "day_of_week": 1,
       "time_period": 3
     }
@@ -231,10 +231,10 @@ const lineup = [
     "model": "habitat_pwa.artistlineup",
     "pk": 20,
     "fields": {
-      "artist_name": "Yoga w/ Shelby",
-      "genre": "Yoga flows",
-      "start_time": "08:00:00",
-      "end_time": "09:00:00",
+      "artist_name": "Yoga w/ Ashleigh",
+      "genre": "Lifestyle",
+      "start_time": "08:00",
+      "end_time": "09:00",
       "day_of_week": 2,
       "time_period": 0
     }
@@ -244,9 +244,9 @@ const lineup = [
     "pk": 21,
     "fields": {
       "artist_name": "Josh Mac",
-      "genre": "Example genre",
-      "start_time": "09:00:00",
-      "end_time": "11:00:00",
+      "genre": "Progressive Psy",
+      "start_time": "09:00",
+      "end_time": "11:00",
       "day_of_week": 2,
       "time_period": 0
     }
@@ -256,9 +256,9 @@ const lineup = [
     "pk": 22,
     "fields": {
       "artist_name": "Tall Tales",
-      "genre": "Example genre",
-      "start_time": "11:00:00",
-      "end_time": "12:00:00",
+      "genre": "Progressive Psy",
+      "start_time": "11:00",
+      "end_time": "12:00",
       "day_of_week": 2,
       "time_period": 0
     }
@@ -268,9 +268,9 @@ const lineup = [
     "pk": 23,
     "fields": {
       "artist_name": "Geometric Flux",
-      "genre": "Example genre",
-      "start_time": "12:00:00",
-      "end_time": "13:00:00",
+      "genre": "Progressive Psy",
+      "start_time": "12:00",
+      "end_time": "13:00",
       "day_of_week": 2,
       "time_period": 1
     }
@@ -280,9 +280,9 @@ const lineup = [
     "pk": 24,
     "fields": {
       "artist_name": "Freedom Fighters",
-      "genre": "Example genre",
-      "start_time": "13:00:00",
-      "end_time": "16:00:00",
+      "genre": "Progressive Psy",
+      "start_time": "13:00",
+      "end_time": "16:00",
       "day_of_week": 2,
       "time_period": 1
     }
@@ -292,9 +292,9 @@ const lineup = [
     "pk": 25,
     "fields": {
       "artist_name": "Breaker",
-      "genre": "Example genre",
-      "start_time": "16:00:00",
-      "end_time": "17:00:00",
+      "genre": "Progressive Psy",
+      "start_time": "16:00",
+      "end_time": "17:00",
       "day_of_week": 2,
       "time_period": 1
     }

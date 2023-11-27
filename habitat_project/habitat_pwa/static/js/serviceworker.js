@@ -17,10 +17,6 @@ const cacheFiles = [
     '/static/js/idb.js',
     '/static/js/idbop.js',
     '/static/patua-one-v20-latin-regular.woff2',
-    // '/templates/habitat_pwa/base.html',
-    // '/templates/habitat_pwa/index.html',
-    // '/templates/habitat_pwa/directions.html',
-    // '/templates/habitat_pwa/map.html',
 ]
 
 // activation event: clean up previously registered service workers

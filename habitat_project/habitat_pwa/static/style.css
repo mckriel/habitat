@@ -102,6 +102,7 @@ li {
 .header-text {
     font-size: 22px;
     font-family: "Patua One";
+    color: var(--white);
     /*text-decoration: underline;*/
 }
 
@@ -170,22 +171,6 @@ li {
     color: var(--white);
 }
 
-/*.day-selector-dropdown {*/
-/*    font-family: 'Patua One', serif;*/
-/*    text-transform: uppercase;*/
-/*    font-size: 20px;*/
-/*    letter-spacing: 1px;*/
-/*    border-radius: 5px;*/
-/*    background-color: #0A1D2C;*/
-/*    width: 350px;*/
-/*    height: 40px;*/
-/*    text-align: center;*/
-/*    border-color: #E04866;*/
-/*    color: var(--white);*/
-/*    padding: 5px;*/
-
-/*}*/
-
 .day-select-active {
     color: var(--white);
 }
@@ -225,6 +210,18 @@ li {
     vertical-align: auto;
 }
 
+.directions-body-alt {
+    width: 350px;
+    text-transform: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    vertical-align: auto;
+    color: var(--white);
+}
+
 .directions-pin {
     display: flex;
     justify-content: center;
@@ -234,13 +231,13 @@ li {
     height: 40px;
     width: 250px;
     text-transform: uppercase;
-    background-color: #E1A16A;
+    background-color: var(--white);
     margin-top: 20px;
 
 }
 
 .directions-pin a {
-    color: #0A1D2C;
+    color: var(--dark);
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -248,17 +245,17 @@ li {
 
 }
 
-.map-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    flex-direction: column;
-}
+/*.map-body {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    text-align: center;*/
+/*    margin: auto;*/
+/*    flex-direction: column;*/
+/*}*/
 
-.map-image {
-    border: #E04866;
-    margin: auto;
-    width: 300px;
-}
+/*.map-image {*/
+/*    border: #E04866;*/
+/*    margin: auto;*/
+/*    width: 300px;*/
+/*}*/
