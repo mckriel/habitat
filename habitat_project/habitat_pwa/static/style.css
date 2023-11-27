@@ -1,3 +1,12 @@
+/* patua-one-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Patua One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('patua-one-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 :root {
     --dark: #0A1D2C;
     --light: #E1A16A;
@@ -90,6 +99,12 @@ li {
     margin-right: auto;
 }
 
+.header-text {
+    font-size: 22px;
+    font-family: "Patua One";
+    /*text-decoration: underline;*/
+}
+
 .schedule-card-body {
     width: 100%;
     border: var(--border23);
@@ -139,29 +154,42 @@ li {
     background-color: var(--dark);
 }
 
-.day-selector-dropdown {
-    font-family: 'Patua One', serif;
-    text-transform: uppercase;
-    font-size: 20px;
-    letter-spacing: 1px;
-    border-radius: 5px;
-    background-color: #0A1D2C;
-    width: 350px;
-    height: 40px;
-    text-align: center;
-    border-color: #E04866;
-    color: var(--white);
-    padding: 5px;
-
-}
-
-.button {
+.filter-button {
     font-family: 'Patua One', serif;
     font-size: 18px;
-    background-color: #0A1D2C;
+    width: 100px;
     border: none;
-    color: #E04866;
+    color: var(--green);
+    text-transform: uppercase;
+    background-color: #0A1D2C;
+    margin-left: 5px;
+    margin-right: 5px;
 }
+
+.filter-button:hover {
+    color: var(--white);
+}
+
+/*.day-selector-dropdown {*/
+/*    font-family: 'Patua One', serif;*/
+/*    text-transform: uppercase;*/
+/*    font-size: 20px;*/
+/*    letter-spacing: 1px;*/
+/*    border-radius: 5px;*/
+/*    background-color: #0A1D2C;*/
+/*    width: 350px;*/
+/*    height: 40px;*/
+/*    text-align: center;*/
+/*    border-color: #E04866;*/
+/*    color: var(--white);*/
+/*    padding: 5px;*/
+
+/*}*/
+
+.day-select-active {
+    color: var(--white);
+}
+
 
 .navbar {
     display: table;
@@ -182,7 +210,7 @@ li {
     color: var(--red);
 }
 
-.active {
+.navbar-select-active {
     color: var(--red);
 }
 
@@ -207,6 +235,7 @@ li {
     width: 250px;
     text-transform: uppercase;
     background-color: #E1A16A;
+    margin-top: 20px;
 
 }
 

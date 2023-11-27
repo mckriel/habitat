@@ -2,29 +2,41 @@
 {% block content %}
 {% load static %}
 
-<div id="offlinedata">
-
-</div>
 <div class="day-selector">
-    <form method="post">
-        {% csrf_token %}
-        {{ day_selector.as_p }}
-    </form>
+    <button class="filter-button day-select-active" type="button" data-id="0">Friday</button>
+    <button class="filter-button" type="button" data-id="1">Saturday</button>
+    <button class="filter-button" type="button" data-id="2">Sunday</button>
+{#    <form method="post">#}
+{#        {% csrf_token %}#}
+{#        {{ day_selector.as_p }}#}
+{#    </form>#}
 </div>
 <div class="schedule-card-body">
 
-    {% if lineup_list %}
         <ul class="schedule-list">
-            {% for artist in lineup_list %}
-            <li class="schedule-card">
-                <p class="schedule-card-title"> {{ artist.artist_name }} </p>
-                <p class="schedule-card-genre"> {{ artist.genre }} </p>
-                <p class="schedule-card-time"> {{ artist.start_time|date:"H:i" }} - {{ artist.end_time|date:"H:i" }} </p>
-            </li>
-            {% endfor %}
+{#            <li class="schedule-card">#}
+{#                <p class="schedule-card-title">Shmikesss</p>#}
+{#                <p class="schedule-card-genre">Disco</p>#}
+{#                <p class="schedule-card-time">18:00 - 20:00</p>#}
+{#            </li>#}
         </ul>
-    {% endif %}
 
 </div>
+
+{#<div class="schedule-card-body">#}
+{##}
+{#{% if lineup_list %}#}
+{#    <ul class="schedule-list">#}
+{#        {% for artist in lineup_list %}#}
+{#        <li class="schedule-card">#}
+{#            <p class="schedule-card-title"> {{ artist.artist_name }} </p>#}
+{#            <p class="schedule-card-genre"> {{ artist.genre }} </p>#}
+{#            <p class="schedule-card-time"> {{ artist.start_time|date:"H:i" }} - {{ artist.end_time|date:"H:i" }} </p>#}
+{#        </li>#}
+{#        {% endfor %}#}
+{#    </ul>#}
+{#{% endif %}#}
+{##}
+{#</div>#}
 
 {% endblock %}

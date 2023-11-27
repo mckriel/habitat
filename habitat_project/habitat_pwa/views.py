@@ -6,32 +6,34 @@ from .forms import DaySelector
 
 
 def index(request):
-    day_selector = DaySelector()
-    running = True
+    # day_selector = DaySelector()
+    # running = True
     template = 'habitat_pwa/index.html'
 
-    while running:
-        if request.method == 'POST':
-            day_selector = DaySelector(request.POST)
-            print(request.POST['day'])
-            selected_day = request.POST['day']
-            day_selector.day = selected_day
-            lineup_list = ArtistLineup.objects.filter()
-            print(lineup_list)
-            context = {
-                "lineup_list": lineup_list,
-                'day_selector': day_selector,
-            }
-            return render(request, template, context)
+    return render(request, template)
 
-        else:
-            lineup_list = ArtistLineup.objects.filter()
-            print(lineup_list)
-            context = {
-                "lineup_list": lineup_list,
-                'day_selector': day_selector,
-            }
-            return render(request, template, context)
+    # while running:
+    #     if request.method == 'POST':
+    #         day_selector = DaySelector(request.POST)
+    #         print(request.POST['day'])
+    #         selected_day = request.POST['day']
+    #         day_selector.day = selected_day
+    #         lineup_list = ArtistLineup.objects.filter()
+    #         print(lineup_list)
+    #         context = {
+    #             "lineup_list": lineup_list,
+    #             'day_selector': day_selector,
+    #         }
+    #         return render(request, template, context)
+    #
+    #     else:
+    #         lineup_list = ArtistLineup.objects.filter()
+    #         print(lineup_list)
+    #         context = {
+    #             "lineup_list": lineup_list,
+    #             'day_selector': day_selector,
+    #         }
+    #         return render(request, template, context)
 
 
 def getdata(request):

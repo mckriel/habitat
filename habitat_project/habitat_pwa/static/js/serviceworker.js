@@ -1,13 +1,26 @@
 // Cache version control
-const CACHE_VERSION = 4;
+const CACHE_VERSION = 6;
 const CURRENT_CACHE = `cache-storage-V${CACHE_VERSION}`;
 
 // List of routes that are going to be cached
 const cacheFiles = [
+    // pages
     '/base_layout',
     '/',
     '/map',
-    '/directions'
+    '/directions',
+    // files
+    '/static/db.sqlite3',
+    '/static/style.css',
+    '/static/img/app-icon.png',
+    '/static/img/festival-map.jpg',
+    '/static/js/idb.js',
+    '/static/js/idbop.js',
+    '/static/patua-one-v20-latin-regular.woff2'
+    // '/templates/habitat_pwa/base.html',
+    // '/templates/habitat_pwa/index.html',
+    // '/templates/habitat_pwa/directions.html',
+    // '/templates/habitat_pwa/map.html',
 ]
 
 // activation event: clean up previously registered service workers
