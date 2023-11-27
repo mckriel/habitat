@@ -305,7 +305,7 @@ const dbPromise = idb.open('lineup-db', 1, function (upgradeDb) {
     upgradeDb.createObjectStore('lineup', {keyPath: 'pk'});
 });
 
-fetch('http://127.0.0.1:8082/getdata').then(function (response) {
+fetch('http://127.0.0.1:8000/getdata').then(function (response) {
     return response.json();
 }).then(function (jsondata) {
     console.log(jsondata)
