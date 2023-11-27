@@ -15,7 +15,7 @@ const lineup = [
     "model": "habitat_pwa.artistlineup",
     "pk": 2,
     "fields": {
-      "artist_name": "Yo-Gurt",
+      "artist_name": "Robbie Dinnie",
       "genre": "Indie Dance",
       "start_time": "18:00",
       "end_time": "19:30",
