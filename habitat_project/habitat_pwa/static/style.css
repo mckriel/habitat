@@ -158,13 +158,13 @@ li {
 .filter-button {
     font-family: 'Patua One', serif;
     font-size: 18px;
-    width: 100px;
+    /*width: 100px;*/
     border: none;
     color: var(--green);
     text-transform: uppercase;
     background-color: #0A1D2C;
-    margin-left: 5px;
-    margin-right: 5px;
+    /*margin-left: 5px;*/
+    /*margin-right: 5px;*/
 }
 
 .filter-button:hover {
